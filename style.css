@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.notes-main-container{
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+
+.main-container-text{
+    width: 100%;
+    height: auto;
+}
+
+.main-container-text h1{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.header-container{
+    width: 100%;
+    height: auto;
+    background-color: #353535;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 1rem;
+}
+
+.left-header-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border-radius: 1rem;
+}
+
+.left-header-welcome-text{
+    width: fit-content;
+    height: auto;
+}
+
+.left-header-welcome-text h3{
+    color: white;
+}
+
+.create-note-button{
+    width: 100%;
+    height: auto;
+}
+
+.create-note-button button{
+    padding: 1rem 1.5rem;
+    background-color: #E7A542;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+}
+
+.right-header-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.icon-container{
+    width: fit-content;
+    height: auto;
+}
+
+.fa-sharp{
+    color: white;
+    cursor: pointer;
+}
+
+.view-container{
+    width: fit-content;
+    height: auto;
+}
+
+.view-container h3{
+    color: white;
+    cursor: pointer;
+}
+
+.main-notes-container{
+    width: 100%;
+    height: auto;
+    background-color: #353535;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    row-gap: 2rem;
+
+}
+
+.note-container{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #0e0e0e;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.title-and-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.title-container{
+    width: fit-content;
+    height: auto;
+}
+
+.title-container a{
+    font-size: 1.5rem;
+    color: #E7A542;
+    text-decoration: none;
+}
+
+.icon-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.icon-container i{
+    color: #E7A542;
+    cursor: pointer;
+}
+
+.description-container{
+    width: 100%;
+    height: auto;
+}
+
+.description-container p{
+    font-size: 1rem;
+    color: white;
+}
+
+.bottom-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.bottom-icon-container i{
+    color: #E7A542;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.note-overlay{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.note-overlay-visible{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+
+
+.note{
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    width: 50%;
+}
+
+.close-icon-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.close-icon-box i{
+    color: black;
+    cursor: pointer;
+}
+
+.note-title-box{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0;
+}
+
+.note-title-box h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.note-form-container{
+    width: 100%;
+    height: auto;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 1rem;
+    padding: 0.5rem 0 ;
+}
+
+.label-and-input{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem 1rem 1rem;
+    border: none;
+    border: 1px solid #e3e3e3;
+}
+
+textarea{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid #e3e3e3;
+}
+
+button{
+    width: 100%;
+    height: auto;
+    padding:1rem 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #E7A542;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="notes-main-container">
+        <div class="main-container-text">
+            <h1>NOTES</h1>
+        </div>
+
+    
+        <div class="header-container">
+            <div class="left-header-container">
+                <div class="left-header-welcome-text">
+                    <h3>Welcome</h3>
+                </div>
+
+                <div class="create-note-button">
+                    <button type="button" id="topButton">Create New Note </button>
+                </div>
+            </div>
+
+
+            <div class="right-header-container">
+                <div class="icon-container">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+                <div class="view-container">
+                    <h3>View</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-notes-container" id="notesSection"> 
+            <!-- <div class="note-container">
+                <div class="title-and-icon-container">
+                    <div class="title-container">
+                        <a href="#" target="_blank"> Title</a>
+                    </div>
+
+                    <div class="icon-container">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                    
+                </div>
+                
+                <div class="description-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolores sapiente blanditiis velit nisi ad impedit nobis rem tenetur numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error doloremque mollitia neque velit ducimus.
+                    </p>
+                </div>
+            </div> -->
+
+
+
+            
+        </div>
+
+
+        <div class="bottom-icon-container">
+            <i class="fa-solid fa-circle-plus" id="bottomIcon"></i>
+        </div>
+    </div>
+
+
+
+    <div class="note-overlay" id="note-overlay">
+        <div class="note">
+            <div class="close-icon-box">
+                <i class="fa-sharp fa-solid fa-xmark" id="closeModalIcon"></i>
+            </div>
+
+            <div class="note-title-box">
+                <h3>Create Note</h3>
+            </div>
+
+            <div class="note-form-container">
+                <form id="noteForm">
+                    <div class="label-and-input">
+                        <label for="titleOfNote"> Title</label>
+                        <input type="text" name="titleOfNote" id="titleOfNote" placeholder="Enter Title Of Note">
+                    </div>
+
+                    <div class="label-and-input">
+                        <label for="noteContent"> Note</label>
+                        <textarea name="noteContent" id="noteContent" cols="30" rows="10" placeholder="Enter Note"></textarea>
+                    </div>
+
+
+                    <button type="submit" id="saveButton" class="form-button">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+   
+    <script src="./script.js"></script>
+</body>
+</html>
